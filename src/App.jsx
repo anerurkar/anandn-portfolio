@@ -17,6 +17,18 @@ export default function ExecutivePortfolio() {
     return () => clearTimeout(t);
   }, []);
 
+const [downloading, setDownloading] = useState(false);
+
+const handleDownload = () => {
+  setDownloading(true);
+
+  setTimeout(() => {
+    setDownloading(false);
+    window.location.href =
+      "https://drive.google.com/uc?export=download&id=1NMWq5RAOhbNJrACsGcVnJYzSusJb75tt";
+  }, 400);
+};
+
  const tabs = {
   'Enterprise Architecture':
     `• Define enterprise-wide target architecture across business, data, and technology domains
@@ -151,14 +163,43 @@ export default function ExecutivePortfolio() {
           alt="Anand"
         />
 
-        <a
-          href="/resume.pdf"
-          download
-          className="bg-white text-slate-900 px-6 py-4 rounded-2xl font-semibold flex items-center gap-2"
-        >
-          <Icon>↓</Icon>
-          Download Resume
-        </a>
+  <button
+  onClick={handleDownload}
+  className="bg-white text-slate-900 px-7 py-4 rounded-2xl font-semibold flex items-center gap-2 min-w-[220px] justify-center"
+>
+  {downloading ? (
+    <>
+      <svg
+        className="animate-spin h-5 w-5 text-slate-900"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+      >
+        <circle
+          className="opacity-25"
+          cx="12"
+          cy="12"
+          r="10"
+          stroke="currentColor"
+          strokeWidth="4"
+        />
+        <path
+          className="opacity-75"
+          fill="currentColor"
+          d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+        />
+      </svg>
+      Preparing Resume...
+    </>
+  ) : (
+    <>
+      <Icon>↓</Icon>
+      Download Latest Resume
+    </>
+  )}
+</button>
+
+
 
       </div>
 
