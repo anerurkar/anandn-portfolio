@@ -32,84 +32,108 @@ export default function ExecutivePortfolio() {
     <main className="min-h-screen bg-slate-100 text-slate-900">
 
       {/* HERO */}
-      <section className="bg-gradient-to-r from-slate-950 via-blue-950 to-indigo-900 text-white">
-        <div className="max-w-7xl mx-auto px-6 py-16">
-          <div className="flex justify-between items-start gap-8 flex-col md:flex-row">
+<section className="bg-gradient-to-r from-slate-950 via-blue-950 to-indigo-900 text-white">
+  <div className="max-w-7xl mx-auto px-6 py-16">
+    <div className="flex justify-between items-start gap-8 flex-col md:flex-row">
 
-            <div className="max-w-4xl">
-              <p className="uppercase tracking-[0.25em] text-white/70 text-sm">
-                World-Class Executive Portfolio
-              </p>
+      {/* LEFT */}
+      <div className="max-w-4xl">
 
-              <h1 className="text-5xl md:text-6xl font-bold mt-4">
-                Anand Nerurkar
-              </h1>
+        <p className="uppercase tracking-[0.25em] text-white/70 text-sm">
+          Enterprise Transformation,Architecture & Delivery Leadership Portfolio
+        </p>
 
-              <p className="mt-3 text-white/70">
-                📍 Mumbai | 📞 +91 9890127922
-              </p>
+        <h1 className="text-5xl md:text-6xl font-bold mt-4">
+          Anand Nerurkar
+        </h1>
 
-              <p className="mt-3 text-xl text-white/80">
-                Trusted by enterprise-scale transformation environments
-              </p>
+        <p className="mt-3 text-white/70">
+          📍 Mumbai | 📞 +91 9890127922
+        </p>
 
-              <h2 className="mt-10 text-3xl md:text-4xl leading-tight">
-                VP Technology | Enterprise Architect | Cloud, AI & BFSI Transformation Leader
-              </h2>
+        <p className="mt-4 text-xl text-white/80">
+          Cloud • AI • Platform Modernization • Enterprise-Scale Architecture
+        </p>
 
-              <div className="flex flex-wrap gap-3 mt-8">
-                {Object.keys(tabs).map((t) => (
-                  <button
-                    key={t}
-                    onClick={() => setTab(t)}
-                    className={`px-5 py-3 rounded-full transition ${
-                      tab === t ? 'bg-white/20' : 'bg-white/10 hover:bg-white/15'
-                    }`}
-                  >
-                    {t}
-                  </button>
-                ))}
-              </div>
+        <h2 className="mt-8 text-3xl md:text-4xl leading-tight">
+		VP Technology | Enterprise Architect | Transformation Leader | SAAS & BFSI Expert
+          
+        </h2>
 
-              <p className="mt-8 text-xl md:text-2xl text-white/85 leading-relaxed">
-                21+ years leading enterprise modernization, engineering transformation, cloud strategy, and AI-led innovation across banking, financial services, payments, compliance, and regulated industries.
-              </p>
+        {/* REFINED VALUE STATEMENT */}
+        <p className="mt-6 text-lg text-white/80 leading-relaxed">
+          21+ years of experience leading enterprise-scale modernization across banking and financial services, 
+          with exposure to other regulated and complex enterprise domains. I help organizations transform legacy platforms 
+          into cloud-native, event-driven, AI-powered ecosystems that improve agility, compliance, and business outcomes.
+        </p>
 
-              <div className="mt-10 flex flex-wrap gap-4">
-                <a href="#contact" className="bg-white text-slate-900 px-7 py-4 rounded-2xl font-semibold">
-                  Hire For A Leadership Role
-                </a>
-
-                <a href="#impact" className="border border-white/60 px-7 py-4 rounded-2xl font-semibold">
-                  View Impact
-                </a>
-
-				
-				<a href="/Anand_Nerurkar_Case_Study_v2.pdf" download="Anand_Nerurkar_Case_Study.pdf" className="bg-blue-600 text-white px-7 py-4 rounded-2xl font-semibold">
-					Download Case Study
-				</a>
-              </div>
-            </div>
-
-            <div className="flex flex-col gap-4 items-center md:items-end">
-              <img
-                src="/profile-photo.jpeg"
-                className="w-44 h-44 rounded-full object-cover border-4 border-white/20"
-                alt="Anand"
-              />
-
-              <a
-                href="/resume.pdf"
-                download
-                className="bg-white text-slate-900 px-6 py-4 rounded-2xl font-semibold flex items-center gap-2"
-              >
-                <Icon>↓</Icon>
-                Download Resume
-              </a>
-            </div>
-          </div>
+        {/* TABS */}
+        <div className="flex flex-wrap gap-3 mt-8">
+          {Object.keys(tabs).map((t) => (
+            <button
+              key={t}
+              onClick={() => setTab(t)}
+              className={`px-5 py-3 rounded-full transition ${
+                tab === t
+                  ? 'bg-white/20'
+                  : 'bg-white/10 hover:bg-white/15'
+              }`}
+            >
+              {t}
+            </button>
+          ))}
         </div>
-      </section>
+
+        {/* CTA */}
+        <div className="mt-10 flex flex-wrap gap-4">
+          <a
+            href="#contact"
+            className="bg-white text-slate-900 px-7 py-4 rounded-2xl font-semibold"
+          >
+            Explore Leadership Opportunities
+          </a>
+
+          <a
+            href="#impact"
+            className="border border-white/60 px-7 py-4 rounded-2xl font-semibold"
+          >
+            View Transformation Impact
+          </a>
+
+          <a
+            href="/Anand_Nerurkar_Case_Study_v2.pdf"
+            download="Anand_Nerurkar_Case_Study.pdf"
+            className="bg-blue-600 text-white px-7 py-4 rounded-2xl font-semibold"
+          >
+            Download Case Study
+          </a>
+        </div>
+
+      </div>
+
+      {/* RIGHT */}
+      <div className="flex flex-col gap-4 items-center md:items-end">
+
+        <img
+          src="/profile-photo.jpeg"
+          className="w-44 h-44 rounded-full object-cover border-4 border-white/20"
+          alt="Anand"
+        />
+
+        <a
+          href="/resume.pdf"
+          download
+          className="bg-white text-slate-900 px-6 py-4 rounded-2xl font-semibold flex items-center gap-2"
+        >
+          <Icon>↓</Icon>
+          Download Resume
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+</section>
 
       {/* STATS */}
       <section className="max-w-7xl mx-auto px-6 -mt-10 relative z-10">
