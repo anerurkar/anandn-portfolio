@@ -29,6 +29,8 @@ const handleDownload = () => {
   }, 400);
 };
 
+const [thoughtOpen, setThoughtOpen] = useState(false);
+
  const tabs = {
   'Enterprise Architecture':
     `• Define enterprise-wide target architecture across business, data, and technology domains
@@ -150,6 +152,9 @@ const handleDownload = () => {
           >
             Download Case Study
           </a>
+		  <a href="#thought-leadership" className="border border-white/60 px-7 py-4 rounded-2xl font-semibold">
+  Thought Leadership Hub
+</a>
         </div>
 
       </div>
@@ -241,7 +246,126 @@ const handleDownload = () => {
 		  <span className="px-4 py-2 bg-slate-100 rounded-xl">AWS Solution Architect</span>
         </div>
       </section>
+	  {/*Thought Leadership */ }
+	  {/* EXECUTIVE THOUGHT LEADERSHIP HUB */}
+{/* EXECUTIVE THOUGHT LEADERSHIP HUB */}
+<section id="thought-leadership" className="max-w-7xl mx-auto px-6 py-16">
 
+  <div className="bg-white rounded-3xl shadow-xl p-10">
+
+    {/* HEADER */}
+    <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
+      
+      <div>
+        <h2 className="text-4xl font-bold">Executive Thought Leadership Hub</h2>
+        <p className="mt-3 text-lg text-slate-600">
+          A structured perspective on enterprise transformation, AI-driven banking, and cloud modernization at scale.
+        </p>
+      </div>
+
+      <span className="text-sm bg-slate-100 px-4 py-2 rounded-full w-fit">
+        BFSI • Cloud • AI • Platform Engineering
+      </span>
+
+    </div>
+
+    {/* BUTTON */}
+    <div className="mt-6 flex justify-end">
+      <button
+        onClick={() => setThoughtOpen(!thoughtOpen)}
+        className="bg-slate-900 text-white px-5 py-3 rounded-xl"
+      >
+        {thoughtOpen ? 'Collapse' : 'Explore'}
+      </button>
+    </div>
+
+    {/* COLLAPSIBLE CONTENT WRAPPER */}
+    {thoughtOpen && (
+      <>
+        {/* DIVIDER */}
+        <div className="my-8 border-t" />
+
+        {/* CORE PILLARS */}
+        <div className="grid md:grid-cols-2 gap-8">
+
+          {/* PILLAR 1 */}
+          <div className="bg-slate-50 p-6 rounded-2xl">
+            <h3 className="text-xl font-semibold">1. Enterprise Transformation Thinking</h3>
+            <p className="text-sm text-slate-600 mt-3">
+              Structured modernization of legacy ecosystems into cloud-native, event-driven, and domain-aligned architectures.
+            </p>
+            <ul className="mt-4 text-sm space-y-2 text-slate-700 list-disc ml-5">
+              <li>Target-state architecture design</li>
+              <li>Operating model transformation</li>
+              <li>Platform and domain decomposition</li>
+              <li>Resilience and governance at scale</li>
+            </ul>
+          </div>
+
+          {/* PILLAR 2 */}
+          <div className="bg-slate-50 p-6 rounded-2xl">
+            <h3 className="text-xl font-semibold">2. AI in Regulated Enterprises</h3>
+            <p className="text-sm text-slate-600 mt-3">
+              Applying GenAI, copilots, and agentic systems within controlled, auditable enterprise environments.
+            </p>
+            <ul className="mt-4 text-sm space-y-2 text-slate-700 list-disc ml-5">
+              <li>RAG-based enterprise knowledge systems</li>
+              <li>AI copilots for banking operations</li>
+              <li>Model governance & risk controls</li>
+              <li>Explainable AI in compliance systems</li>
+            </ul>
+          </div>
+
+          {/* PILLAR 3 */}
+          <div className="bg-slate-50 p-6 rounded-2xl">
+            <h3 className="text-xl font-semibold">3. Cloud & Platform Engineering</h3>
+            <p className="text-sm text-slate-600 mt-3">
+              Designing scalable, resilient, and cost-optimized multi-cloud ecosystems for enterprise workloads.
+            </p>
+            <ul className="mt-4 text-sm space-y-2 text-slate-700 list-disc ml-5">
+              <li>Microservices & event-driven systems</li>
+              <li>DevSecOps & SRE at scale</li>
+              <li>Multi-cloud strategy (AWS / Azure / GCP)</li>
+              <li>Platform engineering & developer experience</li>
+            </ul>
+          </div>
+
+          {/* PILLAR 4 */}
+          <div className="bg-slate-50 p-6 rounded-2xl">
+            <h3 className="text-xl font-semibold">4. Delivery & Engineering Excellence</h3>
+            <p className="text-sm text-slate-600 mt-3">
+              Driving predictable, high-velocity execution across large engineering organizations.
+            </p>
+            <ul className="mt-4 text-sm space-y-2 text-slate-700 list-disc ml-5">
+              <li>Agile at enterprise scale</li>
+              <li>DevSecOps pipelines & automation</li>
+              <li>SLO-driven engineering culture</li>
+              <li>Business-aligned delivery governance</li>
+            </ul>
+          </div>
+
+        </div>
+
+        {/* INSIGHT FOOTER */}
+        <div className="mt-10 bg-gradient-to-r from-slate-900 to-blue-900 text-white p-8 rounded-2xl">
+
+          <h4 className="text-2xl font-semibold">
+            Core Perspective
+          </h4>
+
+          <p className="mt-3 text-white/80 leading-relaxed">
+            Enterprise transformation succeeds only when architecture, AI, cloud, and delivery systems evolve together — 
+            aligned to business outcomes, regulatory constraints, and scalable engineering execution.
+          </p>
+
+        </div>
+      </>
+    )}
+
+  </div>
+
+</section>
+	  
       {/* IMPACT */}
       <section className="scroll-mt-24 max-w-7xl mx-auto px-6 py-16" id="impact">
         <div className="bg-white rounded-3xl shadow-xl p-10">
