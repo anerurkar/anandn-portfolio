@@ -495,10 +495,12 @@ const [thoughtOpen, setThoughtOpen] = useState(false);
         </div>
       </section>
 
-      {/* WHATSAPP */}
+       {/* WHATSAPP FIX */}
       <a
         href="https://wa.me/919890127922"
-        className="fixed bottom-6 right-6 bg-green-500 text-white px-5 py-4 rounded-full shadow-2xl flex items-center gap-2"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-4 right-4 md:bottom-6 md:right-6 bg-green-500 text-white px-4 py-3 md:px-5 md:py-4 rounded-full shadow-2xl flex items-center gap-2"
       >
         <Icon>☎</Icon>WhatsApp
       </a>
