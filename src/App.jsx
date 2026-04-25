@@ -74,7 +74,7 @@ export default function ExecutivePortfolio() {
         </p>
 
         <h2 className="mt-8 text-3xl md:text-4xl leading-tight">
-		VP Technology | Enterprise Architect | Transformation Leader | SAAS & BFSI Expert
+		VP Technology | Enterprise Architect | Transformation Leader | Consulting & Advisory | SAAS & BFSI Expert
           
         </h2>
 
