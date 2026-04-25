@@ -30,11 +30,12 @@ export default function ExecutivePortfolio() {
 
   return (
     <main className="min-h-screen bg-slate-100 text-slate-900">
+
       {/* HERO */}
       <section className="bg-gradient-to-r from-slate-950 via-blue-950 to-indigo-900 text-white">
         <div className="max-w-7xl mx-auto px-6 py-16">
           <div className="flex justify-between items-start gap-8 flex-col md:flex-row">
-            {/* LEFT */}
+
             <div className="max-w-4xl">
               <p className="uppercase tracking-[0.25em] text-white/70 text-sm">
                 World-Class Executive Portfolio
@@ -44,25 +45,25 @@ export default function ExecutivePortfolio() {
                 Anand Nerurkar
               </h1>
 
+              <p className="mt-3 text-white/70">
+                📍 Mumbai | 📞 +91 9890127922
+              </p>
+
               <p className="mt-3 text-xl text-white/80">
                 Trusted by enterprise-scale transformation environments
               </p>
 
               <h2 className="mt-10 text-3xl md:text-4xl leading-tight">
-                VP Technology | Enterprise Architect | Cloud, AI & BFSI
-                Transformation Leader
+                VP Technology | Enterprise Architect | Cloud, AI & BFSI Transformation Leader
               </h2>
 
-              {/* TABS */}
               <div className="flex flex-wrap gap-3 mt-8">
                 {Object.keys(tabs).map((t) => (
                   <button
                     key={t}
                     onClick={() => setTab(t)}
                     className={`px-5 py-3 rounded-full transition ${
-                      tab === t
-                        ? 'bg-white/20'
-                        : 'bg-white/10 hover:bg-white/15'
+                      tab === t ? 'bg-white/20' : 'bg-white/10 hover:bg-white/15'
                     }`}
                   >
                     {t}
@@ -71,29 +72,25 @@ export default function ExecutivePortfolio() {
               </div>
 
               <p className="mt-8 text-xl md:text-2xl text-white/85 leading-relaxed">
-                21+ years leading enterprise modernization, engineering
-                transformation, cloud strategy, and AI-led innovation across
-                banking, financial services, payments, compliance, and regulated
-                industries.
+                21+ years leading enterprise modernization, engineering transformation, cloud strategy, and AI-led innovation across banking, financial services, payments, compliance, and regulated industries.
               </p>
 
               <div className="mt-10 flex flex-wrap gap-4">
-                <a
-                  href="#contact"
-                  className="bg-white text-slate-900 px-7 py-4 rounded-2xl font-semibold"
-                >
+                <a href="#contact" className="bg-white text-slate-900 px-7 py-4 rounded-2xl font-semibold">
                   Hire For A Leadership Role
                 </a>
-                <a
-                  href="#impact"
-                  className="border border-white/60 px-7 py-4 rounded-2xl font-semibold"
-                >
+
+                <a href="#impact" className="border border-white/60 px-7 py-4 rounded-2xl font-semibold">
                   View Impact
                 </a>
+
+				
+				<a href="/Anand_Nerurkar_Case_Study_v2.pdf" download="Anand_Nerurkar_Case_Study.pdf" className="bg-blue-600 text-white px-7 py-4 rounded-2xl font-semibold">
+					Download Case Study
+				</a>
               </div>
             </div>
 
-            {/* RIGHT */}
             <div className="flex flex-col gap-4 items-center md:items-end">
               <img
                 src="/profile-photo.jpeg"
@@ -128,14 +125,24 @@ export default function ExecutivePortfolio() {
           </div>
 
           <div className="bg-white rounded-3xl p-8 shadow-xl text-center">
-            <div className="text-5xl font-bold">{count.p}</div>
-            <div className="mt-2 text-slate-500">Clouds</div>
+            <div className="text-xl font-bold">AWS | Azure | GCP</div>
+            <div className="mt-2 text-slate-500">Multi-Cloud</div>
           </div>
 
           <div className="bg-white rounded-3xl p-8 shadow-xl text-center">
             <div className="text-3xl font-bold">Immediate</div>
             <div className="mt-2 text-slate-500">Availability</div>
           </div>
+        </div>
+      </section>
+
+      {/* CERTIFICATIONS */}
+      <section className="max-w-7xl mx-auto px-6 py-8">
+        <div className="bg-white rounded-3xl shadow-lg p-6 flex flex-wrap gap-4 justify-center text-sm md:text-base">
+          <span className="px-4 py-2 bg-slate-100 rounded-xl">TOGAF Enterprise Architect</span>
+          <span className="px-4 py-2 bg-slate-100 rounded-xl">Azure Solution Architect</span>
+          <span className="px-4 py-2 bg-slate-100 rounded-xl">GCP Professional Architect</span>
+		  <span className="px-4 py-2 bg-slate-100 rounded-xl">AWS Solution Architect</span>
         </div>
       </section>
 
@@ -147,7 +154,79 @@ export default function ExecutivePortfolio() {
         </div>
       </section>
 
-      {/* BOOK + LINKS */}
+      {/* CASE STUDY */}
+      <section className="max-w-7xl mx-auto px-6 py-16">
+        <div className="bg-white rounded-3xl shadow-xl p-10">
+          <h3 className="text-3xl font-bold">
+            Large Retail Bank – End-to-End Lending & Compliance Transformation
+          </h3>
+
+          <p className="mt-4 text-slate-600">
+            Led enterprise-scale modernization of digital lending, onboarding, and compliance platform.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-10 mt-8">
+
+            <div>
+              <h4 className="font-semibold text-lg">Challenges</h4>
+              <ul className="list-disc ml-6 mt-2 text-slate-600 space-y-1">
+                <li>Legacy systems slowing loan approvals</li>
+                <li>Manual KYC & AML processes</li>
+                <li>High drop-offs in onboarding</li>
+                <li>No real-time fraud detection</li>
+              </ul>
+
+              <h4 className="font-semibold text-lg mt-6">Solution</h4>
+              <ul className="list-disc ml-6 mt-2 text-slate-600 space-y-1">
+                <li>Event-driven microservices (Kafka)</li>
+                <li>Azure + GCP hybrid cloud</li>
+                <li>AI underwriting & fraud detection</li>
+                <li>Fenergo + Actimize integration</li>
+                <li>Finacle API integration</li>
+              </ul>
+            </div>
+
+            <div className="grid grid-cols-2 gap-4">
+              <div className="bg-slate-100 p-5 rounded-xl text-center">
+                <div className="text-2xl font-bold text-green-600">↓60%</div>
+                <div className="text-sm">Processing Time</div>
+              </div>
+
+              <div className="bg-slate-100 p-5 rounded-xl text-center">
+                <div className="text-2xl font-bold text-green-600">↑35%</div>
+                <div className="text-sm">Conversion</div>
+              </div>
+
+              <div className="bg-slate-100 p-5 rounded-xl text-center">
+                <div className="text-2xl font-bold text-green-600">99.99%</div>
+                <div className="text-sm">Availability</div>
+              </div>
+
+              <div className="bg-slate-100 p-5 rounded-xl text-center">
+                <div className="text-2xl font-bold text-green-600">6K TPS</div>
+                <div className="text-sm">Scale</div>
+              </div>
+            </div>
+
+          </div>
+
+          {/* ✅ ARCHITECTURE DIAGRAM (ADDED ONLY THIS) */}
+          <div className="mt-12">
+            <h4 className="text-xl font-semibold mb-4">
+              End-to-End Reference Architecture
+            </h4>
+
+            <img
+              src="/ref-arch-digital-lending.png"
+              alt="Digital Lending Architecture"
+              className="rounded-2xl shadow-xl w-full border"
+            />
+          </div>
+
+        </div>
+      </section>
+
+      {/* BOOK */}
       <section className="max-w-7xl mx-auto px-6 py-8 grid md:grid-cols-2 gap-10 items-center">
         <div>
           <h3 className="text-3xl font-bold">Upcoming Book</h3>
@@ -156,63 +235,45 @@ export default function ExecutivePortfolio() {
           </p>
 
           <div className="mt-6 flex gap-4 flex-wrap">
-            <a
-              href="https://www.linkedin.com/in/anand-nerurkar-9868079/"
-              target="_blank"
-              rel="noreferrer"
-              className="px-5 py-3 rounded-2xl border flex gap-2 items-center"
-            >
+            <a href="https://www.linkedin.com/in/anand-nerurkar-9868079/" target="_blank" rel="noreferrer" className="px-5 py-3 rounded-2xl border flex gap-2 items-center">
               <Icon>in</Icon>LinkedIn
             </a>
 
-            <a
-              href="https://github.com/anerurkar"
-              target="_blank"
-              rel="noreferrer"
-              className="px-5 py-3 rounded-2xl border flex gap-2 items-center"
-            >
+            <a href="https://github.com/anerurkar" target="_blank" rel="noreferrer" className="px-5 py-3 rounded-2xl border flex gap-2 items-center">
               <Icon>GH</Icon>GitHub
             </a>
 
-            <a
-              href="https://ananndnerurkar.wixsite.com/website"
-              target="_blank"
-              rel="noreferrer"
-              className="px-5 py-3 rounded-2xl border flex gap-2 items-center"
-            >
+            <a href="https://ananndnerurkar.wixsite.com/website" target="_blank" rel="noreferrer" className="px-5 py-3 rounded-2xl border flex gap-2 items-center">
               <Icon>📘</Icon>Blog
             </a>
           </div>
         </div>
 
-        <img
-          src="/book-cover.png"
-          className="rounded-3xl shadow-2xl w-full"
-          alt="Book"
-        />
+        <img src="/book-cover.png" className="rounded-3xl shadow-2xl w-full" alt="Book" />
       </section>
 
       {/* CONTACT */}
-     <section id="contact" className="scroll-mt-32 max-w-7xl mx-auto px-6 py-16">
-  <div className="bg-gradient-to-r from-slate-900 to-blue-900 text-white rounded-3xl p-10 flex flex-col md:flex-row justify-between gap-6 items-center">
-    <div>
-      <h3 className="text-3xl font-bold">
-        Open to VP / Head / Enterprise Leadership Opportunities
-      </h3>
-      <p className="mt-3 text-white/75">
-        Available for immediate conversations with recruiters, CIOs, CTOs and business leaders.
-      </p>
-    </div>
-    <a
-      href="https://mail.google.com/mail/?view=cm&fs=1&to=anannd.nerurkar@gmail.com"
-      target="_blank"
-      rel="noreferrer"
-      className="bg-white text-slate-900 px-6 py-4 rounded-2xl font-semibold"
-    >
-      Talk to Anand
-    </a>
-  </div>
-</section>
+      <section id="contact" className="scroll-mt-32 max-w-7xl mx-auto px-6 py-16">
+        <div className="bg-gradient-to-r from-slate-900 to-blue-900 text-white rounded-3xl p-10 flex flex-col md:flex-row justify-between gap-6 items-center">
+          <div>
+            <h3 className="text-3xl font-bold">
+              Open to VP / Head / Enterprise Leadership Opportunities
+            </h3>
+            <p className="mt-3 text-white/75">
+              Mumbai | +91 9890127922
+            </p>
+          </div>
+
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=anannd.nerurkar@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+            className="bg-white text-slate-900 px-6 py-4 rounded-2xl font-semibold"
+          >
+            Talk to Anand
+          </a>
+        </div>
+      </section>
 
       {/* WHATSAPP */}
       <a
@@ -221,6 +282,7 @@ export default function ExecutivePortfolio() {
       >
         <Icon>☎</Icon>WhatsApp
       </a>
+
     </main>
   );
 }
