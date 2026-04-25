@@ -17,16 +17,34 @@ export default function ExecutivePortfolio() {
     return () => clearTimeout(t);
   }, []);
 
-  const tabs = {
-    'Enterprise Architecture':
-      'Target-state architecture, modernization roadmaps, governance, composable platforms, resilience and execution at scale.',
-    'Cloud Transformation':
-      'AWS, Azure, GCP modernization, migration factories, platform engineering, cost optimization and reliability.',
-    'AI / GenAI Strategy':
-      'RAG, copilots, agentic AI, governance, secure adoption, measurable business value.',
-    'Engineering Leadership':
-      'Large teams, delivery excellence, stakeholder management, execution rigor and innovation culture.',
-  };
+ const tabs = {
+  'Enterprise Architecture':
+    `• Define enterprise-wide target architecture across business, data, and technology domains
+• Drive legacy modernization (core systems, APIs, integration layers)
+• Establish architecture governance, standards, and guardrails
+• Ensure scalable, secure, and resilient platform design aligned to business capabilities`,
+
+  'Cloud Transformation':
+    `• Lead end-to-end cloud adoption and modernization programs
+• Execute workload migration (6R strategy: rehost, replatform, refactor, etc.)
+• Design hybrid cloud and landing zone architecture
+• Build platform engineering capabilities and CI/CD enablement
+• Optimize cost, performance, and operational resilience across AWS / Azure / GCP`,
+
+  'AI / GenAI Strategy':
+    `• Design enterprise AI adoption and GenAI enablement strategy
+• Build RAG-based knowledge systems and intelligent assistants
+• Implement fraud detection and decision intelligence use cases
+• Enable secure, governed, and responsible AI frameworks
+• Drive measurable business outcomes from AI initiatives`,
+
+  'Engineering Leadership':
+    `• Lead large-scale engineering organizations across multiple domains
+• Drive delivery governance and execution discipline
+• Establish DevSecOps, SRE, and engineering excellence practices
+• Scale teams, capability, and agile maturity across squads
+• Align engineering outcomes with business KPIs and transformation goals`,
+};
 
   return (
     <main className="min-h-screen bg-slate-100 text-slate-900">
@@ -71,16 +89,26 @@ export default function ExecutivePortfolio() {
         <div className="flex flex-wrap gap-3 mt-8">
           {Object.keys(tabs).map((t) => (
             <button
-              key={t}
-              onClick={() => setTab(t)}
-              className={`px-5 py-3 rounded-full transition ${
-                tab === t
-                  ? 'bg-white/20'
-                  : 'bg-white/10 hover:bg-white/15'
-              }`}
-            >
-              {t}
-            </button>
+  key={t}
+  onClick={() => setTab(t)}
+  className={`relative group px-5 py-3 rounded-full transition ${
+    tab === t
+      ? 'bg-white/20'
+      : 'bg-white/10 hover:bg-white/15'
+  }`}
+>
+  {t}
+
+  {/* ✅ TOOLTIP USING EXISTING tabs OBJECT */}
+  <div className="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-72 
+                  bg-black/90 text-white text-xs p-3 rounded-xl 
+                  opacity-0 group-hover:opacity-100 transition 
+                  pointer-events-none z-50 leading-relaxed">
+
+
+    {tabs[t]}
+  </div>
+</button>
           ))}
         </div>
 
@@ -144,7 +172,7 @@ export default function ExecutivePortfolio() {
           </div>
 
           <div className="bg-white rounded-3xl p-8 shadow-xl text-center">
-            <div className="text-5xl font-bold">BFSI</div>
+            <div className="text-xl font-bold">BFSI & Enterprise</div>
             <div className="mt-2 text-slate-500">Domain</div>
           </div>
 
@@ -174,7 +202,7 @@ export default function ExecutivePortfolio() {
       <section className="scroll-mt-24 max-w-7xl mx-auto px-6 py-16" id="impact">
         <div className="bg-white rounded-3xl shadow-xl p-10">
           <h3 className="text-3xl font-bold">Leadership & Transformation Impact</h3>
-          <p className="mt-5 text-lg text-slate-600">{tabs[tab]}</p>
+          <p className="mt-5 text-lg text-slate-600">Enterprise transformation across architecture, cloud,data, AI/GenAI/Agentic AI, and engineering leadership delivering scalable platforms, resilience, governance, and measurable business outcomes.</p>
         </div>
       </section>
 
@@ -206,7 +234,7 @@ export default function ExecutivePortfolio() {
                 <li>Azure + GCP hybrid cloud</li>
                 <li>AI underwriting & fraud detection</li>
                 <li>Fenergo + Actimize integration</li>
-                <li>Finacle API integration</li>
+                <li>Adapter + CBS integration</li>
               </ul>
             </div>
 
