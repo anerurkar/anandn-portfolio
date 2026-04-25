@@ -173,7 +173,7 @@ export default function ExecutivePortfolio() {
       {/* IMPACT */}
       <section className="scroll-mt-24 max-w-7xl mx-auto px-6 py-16" id="impact">
         <div className="bg-white rounded-3xl shadow-xl p-10">
-          <h3 className="text-3xl font-bold">Leadership Expertise</h3>
+          <h3 className="text-3xl font-bold">Leadership & Transformation Impact</h3>
           <p className="mt-5 text-lg text-slate-600">{tabs[tab]}</p>
         </div>
       </section>
@@ -212,8 +212,8 @@ export default function ExecutivePortfolio() {
 
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-slate-100 p-5 rounded-xl text-center">
-                <div className="text-2xl font-bold text-green-600">↓60%</div>
-                <div className="text-sm">Processing Time</div>
+                <div className="text-2xl font-bold text-green-600">from 25 % To 70%</div>
+                <div className="text-sm">State Though Processing Time</div>
               </div>
 
               <div className="bg-slate-100 p-5 rounded-xl text-center">
@@ -227,7 +227,7 @@ export default function ExecutivePortfolio() {
               </div>
 
               <div className="bg-slate-100 p-5 rounded-xl text-center">
-                <div className="text-2xl font-bold text-green-600">6K TPS</div>
+                <div className="text-2xl font-bold text-green-600">8K-12k TPS,150K Users </div>
                 <div className="text-sm">Scale</div>
               </div>
             </div>
@@ -281,7 +281,7 @@ export default function ExecutivePortfolio() {
         <div className="bg-gradient-to-r from-slate-900 to-blue-900 text-white rounded-3xl p-10 flex flex-col md:flex-row justify-between gap-6 items-center">
           <div>
             <h3 className="text-3xl font-bold">
-              Open to VP / Head / Enterprise Leadership Opportunities
+              Open to VP / Chief Architect / Head / Enterprise Architect / Enterprise Leadership Opportunities
             </h3>
             <p className="mt-3 text-white/75">
               Mumbai | +91 9890127922
