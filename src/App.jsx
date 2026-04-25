@@ -281,7 +281,7 @@ export default function ExecutivePortfolio() {
         <div className="bg-gradient-to-r from-slate-900 to-blue-900 text-white rounded-3xl p-10 flex flex-col md:flex-row justify-between gap-6 items-center">
           <div>
             <h3 className="text-3xl font-bold">
-              Open to VP / Chief Architect / Head / Enterprise Architect / Enterprise Leadership Opportunities
+              Open to VP / Engineering Leadership / Head of Engineering / Enterprise Architecture / Enterprise Transformation & Leadership roles
             </h3>
             <p className="mt-3 text-white/75">
               Mumbai | +91 9890127922
