@@ -39,12 +39,15 @@ export default function ExecutivePortfolio() {
 • Drive measurable business outcomes from AI initiatives`,
 
   'Engineering Leadership':
-    `• Lead large-scale engineering organizations across multiple domains
-• Drive delivery governance and execution discipline
-• Establish DevSecOps, SRE, and engineering excellence practices
-• Scale teams, capability, and agile maturity across squads
-• Align engineering outcomes with business KPIs and transformation goals`,
+`• Lead enterprise-scale engineering and delivery organizations across multi-domain platforms  
+• Own delivery governance, execution predictability, and outcome-driven execution  
+• Build DevSecOps, SRE, and engineering excellence at scale  
+• Scale high-performing agile squads across distributed global teams  
+• Align engineering execution with business KPIs and enterprise transformation outcomes`,
+  
 };
+
+
 
   return (
     <main className="min-h-screen bg-slate-100 text-slate-900">
@@ -74,7 +77,7 @@ export default function ExecutivePortfolio() {
         </p>
 
         <h2 className="mt-8 text-3xl md:text-4xl leading-tight">
-		VP Technology | Enterprise Architect | Transformation Leader | Consulting & Advisory | SAAS & BFSI Expert
+		VP Technology | Enterprise Architect | Transformation & Delivery Leader | Consulting & Advisory | SAAS & BFSI Expert
           
         </h2>
 
