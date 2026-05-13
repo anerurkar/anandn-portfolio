@@ -437,7 +437,7 @@ const [thoughtOpen, setThoughtOpen] = useState(false);
             </h4>
 
             <img
-              src="/ref-arch-digital-lending.png"
+              src="/ref-digital-lending-arcitecture-future-state-archi.png"
               alt="Digital Lending Architecture"
               className="rounded-2xl shadow-xl w-full border"
             />
