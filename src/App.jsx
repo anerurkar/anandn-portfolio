@@ -449,9 +449,11 @@ const [thoughtOpen, setThoughtOpen] = useState(false);
       {/* BOOK */}
       <section className="max-w-7xl mx-auto px-6 py-8 grid md:grid-cols-2 gap-10 items-center">
         <div>
-          <h3 className="text-3xl font-bold">Upcoming Book</h3>
+          <h3 className="text-3xl font-bold">Book Published</h3>
           <p className="mt-4 text-lg text-slate-600">
             Enterprise Transformation: A Complete Playbook For Modern Banking
+			Amazon Kindle & Paperback : https://www.amazon.com/dp/9359123560
+			  
           </p>
 
           <div className="mt-6 flex gap-4 flex-wrap">
