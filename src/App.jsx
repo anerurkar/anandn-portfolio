@@ -452,7 +452,10 @@ const [thoughtOpen, setThoughtOpen] = useState(false);
           <h3 className="text-3xl font-bold">Book Published</h3>
           <p className="mt-4 text-lg text-slate-600">
             Enterprise Transformation: A Complete Playbook For Modern Banking
-			Amazon Kindle & Paperback : https://www.amazon.com/dp/9359123560
+			 <a href="https://www.amazon.com/dp/9359123560" target="_blank" rel="noreferrer" className="px-5 py-3 rounded-2xl border flex gap-2 items-center">
+              <Icon>GH</Icon>Amazon Kindle & Paperback
+            </a>
+			   
 			  
           </p>
 
