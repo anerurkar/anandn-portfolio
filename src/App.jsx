@@ -453,7 +453,7 @@ const [thoughtOpen, setThoughtOpen] = useState(false);
           <p className="mt-4 text-lg text-slate-600">
             Enterprise Transformation: A Complete Playbook For Modern Banking
 			 <a href="https://www.amazon.com/dp/9359123560" target="_blank" rel="noreferrer" className="px-5 py-3 rounded-2xl border flex gap-2 items-center">
-              <Icon>Amazon Kindle & Paperback</Icon>
+              <Icon>AKP </Icon>Amazon Kindle & Paperback
             </a>
 			   
 			  
