@@ -25,7 +25,7 @@ const handleDownload = () => {
   setTimeout(() => {
     setDownloading(false);
     window.location.href =
-      "https://drive.google.com/uc?export=download&id=1NMWq5RAOhbNJrACsGcVnJYzSusJb75tt";
+      "https://drive.google.com/file/d/1ZqHdd8zbaIFwbTTqIlrIwkgjQ597r0u5/view?usp=drive_link";
   }, 400);
 };
 
